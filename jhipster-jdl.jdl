@@ -8,8 +8,8 @@ entity Notes {
     comment String required
 }
 
-relationship OneToMany {
-	Notes to Pharmacy{notes}
+relationship ManyToOne {
+	Notes{pharmacy} to Pharmacy
 }
 
 // Set service options to all except few
